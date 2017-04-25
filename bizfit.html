@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Businnes activity tracker app</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" type="text/css" href="slidecss.css">
+
+</head>
+<body>
+
+<div>
+<div class="header"> <h3 align="center">Course project (BizFit Tracker)</h3></div> 
+<br>
+
+
+<div class="slideshow-container" align="center">
+
+<div class="mySlides fade">
+  <img src="bizfit/1.png" style="width:20%">
+</div>
+
+<div class="mySlides fade">
+  <img src="bizfit/2.png" style="width:20%">
+</div>
+
+<div class="mySlides fade">
+  <img src="bizfit/3.png" style="width:20%">
+</div>
+
+<div class="mySlides fade">
+  <img src="bizfit/4.png" style="width:20%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<p style="padding-left:30%; padding-right:30%" align="justify"> The purpose of BizFit Tracker is to support entrepreneurs when they are just starting. Often entrepreneurs feel alone and would need support from their peers and also from experts in different fields such as sales, marketing, taxation, and so on. BizFit Tracker aims to provide an easy way of setting targets, to measure progress and the see and communicate the results. In the first meeting we had with our client they said that the purpose is two-fold: 1) to measure and show results and 2) network with peers and business coaches. The ultimate goals are to motivate and help entrepreneurs reach their goals, feel better in the process, and then motivate them to reach even higher</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="footer"> <br><h3 class="footer" align="center">For more details about project visit: <a href="http://www.bizfit.fi">http://www.bizfit.fi</a></h3> </div>
+</div>
+
+</body>
+</html> 

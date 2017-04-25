@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NFC Orienteering</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" type="text/css" href="slidecss.css">
+
+</head>
+<body>
+
+<div>
+<div class="header"> <h3 align="center">User Experince evaluation and redesign of NFC orienteering app</h3></div>
+<br>
+
+
+<div class="slideshow-container" align="center">
+
+<div class="mySlides fade">
+  <img src="nfcOrienteering/home.png" style="width:20%">
+</div>
+
+<div class="mySlides fade">
+  <img src="nfcOrienteering/guide.png" style="width:20%">
+</div>
+
+<div class="mySlides fade">
+  <img src="nfcOrienteering/completed track.png" style="width:20%">
+</div>
+
+<div class="mySlides fade">
+  <img src="nfcOrienteering/nearTrack.png" style="width:20%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<p style="padding-left:30%; padding-right:30%" align="justify"> NFC orienteering application is a digital version of traditional orienteering sports. Orienteering is a sport in which orienteers needs skills to orient path using map and compass by pass control points of the track. The most popular and old orienteering is the foot orienteering but this sports have other types such as; Car orienteering, Mountain bike orienteering, Ski-orienteering, and Trail orienteering. The NFC orienteering application has two components, one is android application which is for participants use, and the other side is web server mainly used for organizer to organize the orienteering event.</p>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="footer"> <br><h3 class="footer" align="center">For more details about project visit: </h3> </div>
+</div>
+
+</body>
+</html> 

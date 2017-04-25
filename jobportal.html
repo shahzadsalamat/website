@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>bachelor's degree project</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" type="text/css" href="slidecss.css">
+
+</head>
+<body>
+
+<div>
+<div class="header"> <h3 align="center">Job portal</h3></div> 
+<br>
+
+
+<div class="slideshow-container" align="center">
+
+<div class="mySlides fade">
+  <img src="jobportal/Untitled.png" style="width:40%">
+</div>
+
+<div class="mySlides fade">
+  <img src="jobportal/profile.png" style="width:40%">
+</div>
+
+<div class="mySlides fade">
+  <img src="jobportal/admin.png" style="width:40%">
+</div>
+
+<div class="mySlides fade">
+  <img src="jobportal/apply.png" style="width:40%">
+</div>
+
+<div class="mySlides fade">
+  <img src="jobportal/category.png" style="width:40%">
+</div>
+
+<div class="mySlides fade">
+  <img src="jobportal/detail.png" style="width:40%">
+</div>
+
+<div class="mySlides fade">
+  <img src="jobportal/latest job.png" style="width:40%">
+</div>
+
+<div class="mySlides fade">
+  <img src="jobportal/managejob.png" style="width:40%">
+</div>
+
+<div class="mySlides fade">
+  <img src="jobportal/notify.png" style="width:40%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<div><p style="padding-left:30%; padding-right:30%" align="justify"> Job Portal provides every category of jobs to jobseekers and it is worldwide. It is a platform from where the jobseekers can start their professional careers with low effort for searching jobs. Employer can post a job after registration from anywhere in the world. The website will show all jobs in categorized manner. Jobseekers can browse the jobs for its description and other details. The admin keep track of job record through admin panel. The admin can edit the content of jobs posted by employers and have privilege to delete and edit Jobseekers, employers and jobs.</p></div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="footer"> <br><h3 class="footer" align="center">For more details about project visit: </h3> </div>
+</div>
+
+</body>
+</html> 
